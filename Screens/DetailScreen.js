@@ -9,7 +9,7 @@ const DetailScreen = ({route}) => {
     const {lat,lon} = route.params;
 
     useEffect(()=>{
-        const key ="16d3374be7d74982724102c96d08327a";
+        const key ="e58b9a5ffd63c79ad3eb224e127a20b3";
         const api_url=`https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude=current,minutely,hourly&appid=${key}&units=metric`;
         fetch(api_url)
             .then(data => {
